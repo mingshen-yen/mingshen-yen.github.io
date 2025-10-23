@@ -1,37 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ming-Hsuan’s Podcasts</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Huh? Germany!｜Ming-Hsuan's Podcast</title>
+  <meta name="description" content="Huh? Germany! — Cultural Shock and Reflections on Life in Germany. Programme notes, guests, listening links and contact details." />
+  <!-- 基本 SEO -->
+  <meta name="author" content="Ming-Hsuan" />
+  <meta name="robots" content="index,follow" />
+  <!-- Open Graph（社群分享預覽，可自行替換） -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Huh? Germany!" />
+  <meta property="og:title" content="Huh? Germany!｜Ming-Hsuan 的 Podcast" />
+  <meta property="og:description" content="Cultural Shock and Reflections on Life in Germany. — Programme Overview & Newest Episode" />
+  <meta property="og:url" content="https://mingshen-yen.github.io/" />
+  <meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=Huh%3F+Germany%21" />
+  <!-- 字型（可改） -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Header / Navigation -->
   <header>
-    <h1>Podcast - Huh? Germany!</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="podcasts.html">Podcasts</a>
-      <a href="projects.html">Publications</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+    <div class="container nav" aria-label="Home">
+      <div class="brand" aria-label="brand logo">
+        <span class="dot" aria-hidden="true"></span>
+        <span>Mingshen's Podcast</span>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="podcasts.html">Podcasts</a>
+        <!-- <a href="projects.html">Projects</a> -->
+        <!-- <a href="publications.html">Publications</a> -->
+        <a href="about.html">About me</a>
+      </nav>
+    </div>
   </header>
-    <main>
-        <h2>Huh? Germany!</h2>
-            <img src="/images/podcast_logo.png" alt="Ming-Hsuan's Profile Picture" style="width:200px;height:auto;">
-        <div>
-        <strong>Language:</strong> English & Manderin<br>
-        <strong>Platform:</strong> Spotify, Apple Podcasts, YouTube<br> 
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="pill">📣 New Collection Launched・Updated Biweekly</span>
+        <h1 class="glow">🎙️ Huh? Germany!</h1>
+        <h2>Cultural Shock and Reflections on Life in Germany</h2>
+        <p>Talk about relocation, language, workplace, and academic career transitions. This hub compiles all episodes, listening links, and programme notes.</p>
+        <div class="cta">
+          <!-- <a class="btn primary" href="#episodes">Episodes</a> -->
+          <a class="btn ghost" href="https://open.spotify.com/show/7BLedCETH8biaAsuuAs1I8?si=2691206bddf443c4" target="_blank" rel="noopener noreferrer">Spotify</a>
+          <a class="btn ghost" href="https://podcasts.apple.com/us/podcast/huh-germany/id1821219131" target="_blank" rel="noopener noreferrer">Apple Podcasts</a>
+          <a class="btn ghost" href="https://www.youtube.com/@huh.germany" target="_blank" rel="noopener noreferrer">YouTube</a>
         </div>
-        <p>
-        Welcome to "Huh? Germany!", 
-        the podcast that unravels the quirks and curiosities of life in Germany. 
-        Join us as we explore cultural nuances, 
-        share amusing anecdotes, 
-        and provide insights into what makes Germany uniquely fascinating. 
-        Whether you're a local or just curious about German culture, this podcast is your go-to source for all things German!
-        </p>
-    </main>
-    
-    <footer>© 2025 Ming-Hsuan</footer>
+      </div>
+      <div class="cover" aria-hidden="true">
+        <p> <br> </p>
+        <img src="/images/podcast_logo.png" alt="Podcast-logo"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- Episodes -->
+  <section id="episodes">
+    <div class="container">
+      <div class="section-title">
+        <h2>New Episodes</h2>
+      </div>
+
+      <div class="cards" role="list">
+        <!-- 卡片 1 -->
+        <article class="card" role="listitem">
+          <div class="body">
+            <div class="meta"><span>EP18</span><span>12 mins</span><span>EN</span><span>2025-10-20</span></div>
+            <div class="title">Don't Say Happy Birthday Early! — My German Birthday Shock 🎂🇩🇪</div>
+            <p class="muted">What if wishing someone Happy Birthday too early could actually bring bad luck? 🤯</p>
+            <div class="tags">
+              <span class="tag">Life</span>
+              <span class="tag">Culture</span>
+            </div>
+          </div>
+        </article>
+        <article class="card" role="listitem">
+          <div class="body">
+            <div class="meta"><span>EP17</span><span>27 mins</span><span>ZH</span><span>2025-10-11</span></div>
+            <div class="title">德國 vs. 台灣: 生日該怎麼過? ft.阿桐</div>
+            <p class="muted">來到德國生活後, 也不免俗的遇到一些過生日的文化衝擊, 像是最經典的: 在德國千萬不能提前祝壽星生日快樂!</p>
+            <div class="tags">
+              <span class="tag">Life</span>
+              <span class="tag">Culture</span>
+            </div>
+          </div>
+        </article>
+        <article class="card" role="listitem">
+          <div class="body">
+            <div class="meta"><span>EP16</span><span>33 mins</span><span>EN</span><span>2025-10-01</span></div>
+            <div class="title">Chips and Culture: Life in Germany's Semiconductor Industry ft.Bowen</div>
+            <p class="muted">How is the life in Germany's Semiconductor industry? From the academic working to semiconductor industry?</p>
+            <div class="tags">
+              <span class="tag">Work</span>
+              <span class="tag">Culture</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+   </section>     
+
+  <!-- About + Contact -->
+  <section id="about">
+    <div class="container split">
+
+      <article id="contact" class="panel">
+        <h3>Contact me</h3>
+        <form action="https://example.com/api/contact" method="post">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="your name" autocomplete="name" required />
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required />
+          <div class="hint">We shall only use it to reply to your message.</div>
+
+          <label for="topic">Subject</label>
+          <select id="topic" name="topic">
+            <option value="feedback">feedback</option>
+            <option value="collab">collaboration</option>
+            <option value="guest">recommanded guest</option>
+          </select>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="I want to say ..." required></textarea>
+          <button class="btn primary" type="submit">submit</button>
+        </form>
+      </article>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <small>© <span id="year"></span> Mingshen · All rights reserved </small>
+    </div>
+  </footer>
+
+  <script>
+    // 動態年份
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
+</html>

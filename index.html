@@ -1,28 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ming-Hsuan’s Website</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ming-Hsuan's Website</title>
+  <meta name="description" content="My personal website to showcase my projects and podcast." />
+  <!-- 基本 SEO -->
+  <meta name="author" content="Ming-Hsuan" />
+  <meta name="robots" content="index,follow" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="personal web" />
+  <meta property="og:title" content="Mingshen's homepage" />
+  <meta property="og:description" content="My personal website to showcase my projects and podcast." />
+  <meta property="og:url" content="https://mingshen-yen.github.io/" />
+  <meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=Huh%3F+Germany%21" />
+  <!-- 字型（可改） -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>Welcome to Ming-Hsuan’s Page</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="podcasts.html">Podcasts</a>
-      <a href="projects.html">Publications</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+    <div class="container nav" aria-label="Home">
+      <div class="brand" aria-label="brand logo">
+        <span class="dot" aria-hidden="true"></span>
+        <span>Mingshen's website</span>
+      </div>
+    </div>
   </header>
+    
+  <section class="home-hero">
+    <div class="container home-hero-grid">
+      <div class="profile-cover" aria-hidden="true">
+        <img src="/images/profile-1.jpg" alt="Podcast-logo"/>
+      </div>
+      <div>
+        <h1>Hello!</h1>
+        <h2>A Bit About Me</h2>
+        <p>After 6+ years studying Earth Science 🌏, I'm now exploring human stories through podcasting
+          and experimenting with building new worlds on the web.
+        </p>
+        <div class="cta">
+          <a class="btn primary" href="about.html" rel="noopener">About me</a>
+          <a class="btn ghost" href="podcasts.html" rel="noopener">Podcasts</a>
+          <!-- <a class="btn ghost" href="projects.html" rel="noopener">Projects</a> -->
+          <!-- <a class="btn ghost" href="publications.html" rel="noopener">Publications</a> -->
+          <!-- <a class="btn ghost" href="https://www.linkedin.com/in/mingshen-yen/" target="_blank" rel="noopener">LinkedIn</a> -->
+          <!-- <a class="btn ghost" href="https://www.linkedin.com/in/mingshen-yen/" target="_blank" rel="noopener">GitHub</a> -->
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <main>
-    <h2>About Me</h2>
-    <img src="/images/profile_photo.jpg" alt="Ming-Hsuan's Profile Picture" style="width:200px;height:auto;">
-    <p>I’m a geophysicist exploring data, earth science, and ESG.</p>
-  </main>
+  <footer>
+    <div class="container">
+      <small>© <span id="year"></span> Mingshen · All rights reserved </small>
+    </div>
+  </footer>
 
-  <footer>© 2025 Ming-Hsuan</footer>
+  <script>
+    // 動態年份
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
